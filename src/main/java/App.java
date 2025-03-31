@@ -1,5 +1,3 @@
-package com.example;
-
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -92,14 +90,14 @@ public class App {
     }
 
     private static boolean checkWinner(char[] board, char mark) {
-        return (board[0] == mark && board[1] == mark && board[2] == mark) ||
-                (board[3] == mark && board[4] == mark && board[5] == mark) ||
-                (board[6] == mark && board[7] == mark && board[8] == mark) ||
-                (board[0] == mark && board[3] == mark && board[6] == mark) ||
-                (board[1] == mark && board[4] == mark && board[7] == mark) ||
-                (board[2] == mark && board[5] == mark && board[8] == mark) ||
-                (board[0] == mark && board[4] == mark && board[8] == mark) ||
-                (board[2] == mark && board[4] == mark && board[6] == mark);
+        return (board[0] == mark && board[1] == mark && board[2] == mark)
+                || (board[3] == mark && board[4] == mark && board[5] == mark)
+                || (board[6] == mark && board[7] == mark && board[8] == mark)
+                || (board[0] == mark && board[3] == mark && board[6] == mark)
+                || (board[1] == mark && board[4] == mark && board[7] == mark)
+                || (board[2] == mark && board[5] == mark && board[8] == mark)
+                || (board[0] == mark && board[4] == mark && board[8] == mark)
+                || (board[2] == mark && board[4] == mark && board[6] == mark);
     }
 
     private static boolean isDraw(char[] board) {
